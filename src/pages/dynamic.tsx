@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from "react"
 import { Col, Container, Row } from "reactstrap"
+import { GetServerSideProps, NextPage } from "next"
 
 
 // pages/dynamic.tsx
 
-import { GetServerSideProps, NextPage } from "next"
 
 type ApiResponse = {
     name: string
@@ -26,7 +26,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
 }
 
 const Dynamic: NextPage = (props: {
-  children?: ReactNode
+  children?
   serverSideData?: ApiResponse
 }) => {
   const [clientSideData, setClientSideData] = useState<ApiResponse>()
