@@ -1,6 +1,5 @@
 // pages/dynamic.tsx
 
-import { NextPage } from "next"
 import { useEffect, useState } from "react"
 import { Col, Container, Row } from "reactstrap"
 
